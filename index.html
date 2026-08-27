@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Murli Sai | Cybersecurity Portfolio</title>
+
+  <meta name="description"
+        content="Murli Sai - B.Tech CSE graduate focused on Cybersecurity, Data Analytics, Web Development, Python, SQL and AI/ML.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #07111f;
+      color: #f5f7fa;
+      line-height: 1.6;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #081321;
+      border-bottom: 1px solid #1e334d;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h2 {
+      color: #38bdf8;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    section {
+      padding: 80px 8%;
+    }
+
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 1000px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 8vw, 78px);
+      margin-bottom: 10px;
+    }
+
+    .hero h1 span {
+      color: #38bdf8;
+    }
+
+    .hero h2 {
+      color: #94a3b8;
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      color: #cbd5e1;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      border: 1px solid #38bdf8;
+      color: #07111f;
+      background: #38bdf8;
+    }
+
+    .btn.secondary {
+      background: transparent;
+      color: #38bdf8;
+    }
+
+    .btn:hover {
+      opacity: 0.85;
+    }
+
+    h2.section-title {
+      color: #38bdf8;
+      font-size: 34px;
+      margin-bottom: 30px;
+    }
+
+    .about-text {
+      max-width: 800px;
+      color: #cbd5e1;
+      font-size: 17px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skill {
+      background: #102238;
+      border: 1px solid #23415f;
+      padding: 10px 16px;
+      border-radius: 20px;
+      color: #dbeafe;
+    }
+
+    .card {
+      background: #0c1a2b;
+      border: 1px solid #203852;
+      border-radius: 14px;
+      padding: 25px;
+      margin-bottom: 20px;
+      max-width: 850px;
+    }
+
+    .card h3 {
+      color: #e0f2fe;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: #b8c7d9;
+    }
+
+    .contact a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #050c15;
+      color: #94a3b8;
+      border-top: 1px solid #1e334d;
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      nav a {
+        margin: 0 6px;
+      }
+
+      section {
+        padding: 60px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <h2>Murli Sai</h2>
+
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Hi, I'm <span>Murli Sai</span></h1>
+
+    <h2>Cybersecurity Enthusiast | Data Analyst | Web Developer</h2>
+
+    <p>
+      B.Tech Computer Science Engineering graduate focused on
+      Cybersecurity, Data Analytics, Web Development, Python, SQL
+      and AI/ML technologies.
+    </p>
+
+    <div class="buttons">
+      <a class="btn" href="mailto:nambalamurlisai@gmail.com">
+        Contact Me
+      </a>
+
+      <a class="btn secondary"
+         href="https://www.linkedin.com/in/murli-sai-13a942313"
+         target="_blank">
+        LinkedIn
+      </a>
+
+      <a class="btn secondary"
+         href="https://github.com/nambalamurlisai"
+         target="_blank">
+        GitHub
+      </a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <p class="about-text">
+      I am Murli Sai, a Computer Science Engineering graduate from
+      Sandip University, graduating in 2026. I am interested in
+      Cybersecurity, Cyber Risk, GRC, Data Analytics and Web Development.
+      I enjoy working with technology to solve practical problems and
+      continuously improving my technical skills.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills">
+      <span class="skill">Cybersecurity</span>
+      <span class="skill">GRC</span>
+      <span class="skill">Cyber Risk</span>
+      <span class="skill">Python</span>
+      <span class="skill">SQL</span>
+      <span class="skill">Data Analytics</span>
+      <span class="skill">Web Development</span>
+      <span class="skill">HTML</span>
+      <span class="skill">CSS</span>
+      <span class="skill">JavaScript</span>
+      <span class="skill">AI/ML</span>
+      <span class="skill">GitHub</span>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2 class="section-title">Experience</h2>
+
+    <div class="card">
+      <h3>Seed IT Solutions</h3>
+      <p>
+        Data Analyst & Web Development
+      </p>
+      <p>
+        Worked on data analysis and web development activities,
+        applying analytical and technical skills to practical projects.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="card">
+      <h3>Neuro-Well AI Generative Model</h3>
+
+      <p>
+        An AI-focused project exploring generative AI concepts and
+        technology to support innovative solutions in the mental
+        wellness domain.
+      </p>
+
+      <br>
+
+      <a class="btn secondary"
+         href="https://github.com/nambalamurlisai"
+         target="_blank">
+        View on GitHub
+      </a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="card contact">
+      <p><strong>Name:</strong> Murli Sai</p>
+      <p><strong>Location:</strong> Hyderabad</p>
+      <p><strong>Email:</strong>
+        <a href="mailto:nambalamurlisai@gmail.com">
+          nambalamurlisai@gmail.com
+        </a>
+      </p>
+      <p><strong>Phone:</strong> 8962153757</p>
+
+      <br>
+
+      <p>
+        <a href="https://www.linkedin.com/in/murli-sai-13a942313"
+           target="_blank">
+          LinkedIn Profile
+        </a>
+      </p>
+
+      <p>
+        <a href="https://github.com/nambalamurlisai"
+           target="_blank">
+          GitHub Profile
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Murli Sai | Cybersecurity Portfolio
+  </footer>
+
+</body>
+</html>
