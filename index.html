@@ -1,336 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#050816">
+<title>Murli Sai — MIS • IT • Data Analyst</title>
+<meta name="description" content="Murli Sai — B.Tech graduate focused on Management Information Systems, IT Management, Business Analysis, IT Analysis and Data Analytics.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap');
+:root{--bg:#050816;--bg2:#080d1d;--card:#0b1224cc;--card2:#10182d;--text:#f5f7ff;--muted:#9aa7bf;--line:#25304a;--blue:#35a8ff;--cyan:#28e0d0;--purple:#9b5cff;--pink:#ef5cff;--gold:#ffbf55;--shadow:0 24px 80px #0008}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.65;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.25;background-image:linear-gradient(#ffffff05 1px,transparent 1px),linear-gradient(90deg,#ffffff05 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(to bottom,#000,transparent 80%)}
+a{text-decoration:none;color:inherit}.wrap{width:min(1180px,calc(100% - 40px));margin:auto}
+nav{position:sticky;top:0;z-index:100;background:#050816c9;border-bottom:1px solid #ffffff10;backdrop-filter:blur(20px)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px;font-family:"Manrope";font-weight:800;font-size:19px}.brand-mark{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;border:1px solid #35a8ff55;background:linear-gradient(135deg,#0c1d38,#11102b);box-shadow:0 0 30px #35a8ff22}.brand-mark span{color:var(--cyan)}.navlinks{display:flex;gap:24px;font-size:13px;color:var(--muted);align-items:center}.navlinks a:hover{color:#fff}.navbtn{padding:10px 15px;border:1px solid #ffffff1a;border-radius:11px;background:#ffffff06}.menu{display:none;font-size:24px}
+.hero{position:relative;padding:92px 0 70px;min-height:690px;display:grid;align-items:center;background:radial-gradient(circle at 72% 35%,#144d6840 0,transparent 28%),radial-gradient(circle at 95% 5%,#8b3dba25 0,transparent 24%)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:#b9c6db;background:#ffffff07;border:1px solid #ffffff12;padding:8px 13px;border-radius:999px;font-size:12px;font-weight:700}.dot{width:7px;height:7px;border-radius:50%;background:#43e6a8;box-shadow:0 0 14px #43e6a8}
+h1{font-family:"Manrope";font-size:clamp(54px,7.5vw,96px);line-height:.93;letter-spacing:-.065em;margin:24px 0 20px}h1 .grad{background:linear-gradient(90deg,#fff 0%,#37b7ff 42%,#a15cff 75%,#35e5cb);-webkit-background-clip:text;color:transparent}
+.hero-copy>p{max-width:650px;color:#aeb9cc;font-size:18px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0}.btn{display:inline-flex;align-items:center;gap:9px;padding:13px 18px;border-radius:12px;border:1px solid #ffffff1c;background:#ffffff08;font-weight:700;font-size:14px;transition:.25s}.btn:hover{transform:translateY(-3px);border-color:#35a8ff66;box-shadow:0 12px 30px #0005}.btn.primary{background:linear-gradient(100deg,#218cff,#a74fff);border:0;box-shadow:0 10px 35px #6c45ff33}
+.socials{display:flex;gap:9px}.social{width:42px;height:42px;display:grid;place-items:center;border:1px solid #ffffff16;border-radius:12px;color:#cbd5e5;background:#ffffff05}.social:hover{color:#fff;border-color:#35a8ff66}
+.hero-visual{position:relative;display:grid;place-items:center}.orb{position:absolute;width:480px;height:480px;border-radius:50%;border:1px solid #35a8ff20;box-shadow:inset 0 0 90px #35a8ff08,0 0 90px #35a8ff08}.orb:before,.orb:after{content:"";position:absolute;border:1px solid #9b5cff25;border-radius:50%}.orb:before{inset:52px}.orb:after{inset:110px}.photo-ring{position:relative;width:320px;height:320px;padding:8px;border-radius:50%;background:linear-gradient(135deg,#2be1d0,#2f8cff,#a24fff,#ef5cff);box-shadow:0 0 90px #3b8dff30}.photo-ring:before{content:"";position:absolute;inset:7px;border-radius:50%;background:#050816}.photo-ring img{position:relative;width:100%;height:100%;object-fit:cover;border-radius:50%;border:5px solid #071020}.float{position:absolute;padding:10px 13px;border:1px solid #ffffff14;border-radius:14px;background:#0b1224e8;box-shadow:0 18px 50px #0007;font-size:12px;font-weight:700;color:#dbe6f6;backdrop-filter:blur(12px)}.f1{top:7%;right:2%}.f2{bottom:8%;left:0}.f3{top:43%;left:-3%}.f4{bottom:20%;right:-5%}
+section{padding:100px 0;border-top:1px solid #ffffff09}.kicker{font-size:11px;text-transform:uppercase;letter-spacing:.18em;color:#45dccc;font-weight:800}.title{font-family:"Manrope";font-size:42px;line-height:1.05;letter-spacing:-.04em;margin:8px 0 12px}.sub{color:var(--muted);max-width:720px;margin:0 0 34px}
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}.glass{background:linear-gradient(145deg,#0d1528d9,#080f20c9);border:1px solid #ffffff10;border-radius:22px;padding:28px;box-shadow:var(--shadow);position:relative;overflow:hidden}.glass:before{content:"";position:absolute;width:180px;height:180px;right:-80px;top:-80px;background:#35a8ff12;border-radius:50%;filter:blur(20px)}.glass h3{margin:0 0 10px;font-family:"Manrope";font-size:22px}.glass p{color:#a8b4c8;margin:0}.traits{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}.trait{padding:15px;border:1px solid #ffffff0e;background:#ffffff04;border-radius:14px}.trait b{display:block;font-size:13px}.trait span{display:block;color:#7f8ca3;font-size:11px;margin-top:3px}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.stat{padding:20px;border-radius:18px;background:#ffffff05;border:1px solid #ffffff0d}.stat .n{font-family:"Manrope";font-size:30px;font-weight:800}.stat .l{color:#8f9db4;font-size:12px}.blue{color:var(--blue)}.cyan{color:var(--cyan)}.purple{color:var(--purple)}.gold{color:var(--gold)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(145deg,#0d1527,#090f1e);border:1px solid #ffffff0d;border-radius:20px;padding:24px;transition:.25s}.card:hover{transform:translateY(-6px);border-color:#35a8ff44;box-shadow:0 20px 60px #0006}.icon{width:45px;height:45px;border-radius:13px;display:grid;place-items:center;background:#35a8ff12;border:1px solid #35a8ff20;font-size:20px;margin-bottom:18px}.card h3{font-family:"Manrope";margin:0 0 7px;font-size:20px}.card p{margin:0;color:#909db4;font-size:14px}.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}.tag{font-size:11px;padding:6px 9px;border-radius:999px;background:#ffffff06;border:1px solid #ffffff0d;color:#b9c7dc}
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.skill{padding:19px;border-radius:16px;background:#ffffff04;border:1px solid #ffffff0a}.skilltop{display:flex;justify-content:space-between;gap:15px;font-size:14px;font-weight:700}.skilltop span{color:#6e7b92;font-size:11px}.bar{height:6px;background:#ffffff09;border-radius:99px;margin-top:11px;overflow:hidden}.bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,#2e94ff,#a45bff,#34dfcf)}
+.timeline{position:relative;max-width:900px;margin-top:25px}.timeline:before{content:"";position:absolute;left:8px;top:8px;bottom:8px;width:1px;background:linear-gradient(#35a8ff,#9b5cff,transparent)}.event{position:relative;padding-left:38px;margin-bottom:18px}.event:before{content:"";position:absolute;left:3px;top:26px;width:11px;height:11px;border-radius:50%;background:#35a8ff;box-shadow:0 0 0 6px #35a8ff13,0 0 20px #35a8ff66}.event .date{font-size:11px;color:#43dfcf;letter-spacing:.12em;font-weight:800}.event h3{margin:5px 0;font-family:"Manrope"}.event p{margin:0;color:#919db3;font-size:14px}
+.edu{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.edu .year{font-size:11px;color:#45dccc;font-weight:800;letter-spacing:.12em}.edu h3{margin:8px 0 5px}.edu p{margin:0;color:#8f9db4;font-size:13px}
+.certs{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.cert{overflow:hidden;padding:0}.cert img{display:block;width:100%;aspect-ratio:1.45;object-fit:cover;transition:.35s}.cert:hover img{transform:scale(1.03)}.certbody{padding:20px}.certbody h3{margin:0 0 5px}.certbody p{margin:0;color:#8f9db4;font-size:13px}.certbody .btn{margin-top:16px}
+.resume{display:grid;grid-template-columns:1fr .9fr;gap:18px;align-items:stretch}.resume-preview{overflow:hidden;padding:0;min-height:390px;background:#e9edf4}.resume-preview img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}.resume-info{display:flex;flex-direction:column;justify-content:center}.resume-info p{color:#8f9db4}.resume-list{display:grid;gap:10px;margin:18px 0}.resume-item{padding:12px 14px;border:1px solid #ffffff0d;border-radius:12px;background:#ffffff04;font-size:13px;color:#c2cde0}
+.contact{display:grid;grid-template-columns:.8fr 1.2fr;gap:18px}.contact-list{display:grid;gap:10px;margin-top:22px}.contact-item{display:flex;gap:12px;align-items:center;padding:13px;border:1px solid #ffffff0d;background:#ffffff04;border-radius:14px}.contact-item .ci{width:38px;height:38px;display:grid;place-items:center;border-radius:10px;background:#35a8ff10}.contact-item small{display:block;color:#6f7c92}.contact-item b{font-size:13px}.form{display:grid;gap:12px}.form input,.form textarea{width:100%;border:1px solid #ffffff12;background:#ffffff05;border-radius:13px;padding:14px;color:#fff;font:inherit;outline:none}.form input:focus,.form textarea:focus{border-color:#35a8ff66;box-shadow:0 0 0 3px #35a8ff0c}.form textarea{min-height:150px;resize:vertical}
+footer{padding:35px 0;border-top:1px solid #ffffff09;color:#68758c;text-align:center;font-size:12px}.footer-brand{font-family:"Manrope";font-size:18px;color:#dbe5f4;margin-bottom:6px}
+.modal{position:fixed;inset:0;background:#000c;display:none;align-items:center;justify-content:center;padding:25px;z-index:200}.modal.show{display:flex}.modal img{max-width:min(1100px,95vw);max-height:90vh;object-fit:contain;border-radius:14px;box-shadow:0 30px 100px #000}.close{position:absolute;right:22px;top:18px;color:#fff;font-size:32px;cursor:pointer}
+@media(max-width:900px){.navlinks{display:none}.menu{display:block}.hero-grid,.about-grid,.resume,.contact{grid-template-columns:1fr}.hero{padding-top:65px}.hero-visual{order:-1}.photo-ring{width:260px;height:260px}.orb{width:370px;height:370px}.float{display:none}.cards{grid-template-columns:1fr 1fr}.certs,.edu{grid-template-columns:1fr}.title{font-size:35px}}
+@media(max-width:620px){.wrap{width:min(100% - 28px,1180px)}.hero{padding-bottom:45px}h1{font-size:55px}.hero-copy>p{font-size:16px}.cards,.skills,.traits,.stats{grid-template-columns:1fr}.section{padding:75px 0}.nav{height:65px}.photo-ring{width:225px;height:225px}.orb{width:310px;height:310px}.hero-visual{margin-bottom:10px}.cert img{aspect-ratio:1.35}}
+</style>
 
-  <title>Murli Sai | Cybersecurity Portfolio</title>
+<style>
+body{font-size:15px;letter-spacing:-.005em}
+h1,.title,h2,h3,.brand{font-family:"Manrope",Inter,sans-serif}
+h1{font-weight:800}
+.title{font-weight:800}
+.hero-copy>p{line-height:1.75}
+.card p,.glass p,.event p,.edu p,.sub{line-height:1.7}
+.navlinks{font-weight:600}
+.btn{font-weight:700}
+.kicker{font-family:Inter,sans-serif}
+</style>
 
-  <meta name="description"
-        content="Murli Sai - B.Tech CSE graduate focused on Cybersecurity, Data Analytics, Web Development, Python, SQL and AI/ML.">
+<style>
+.resume-exact{
+  margin:28px auto 0;
+  max-width:1050px;
+  padding:18px;
+  border:1px solid rgba(40,145,255,.35);
+  border-radius:18px;
+  background:rgba(3,12,25,.72);
+  box-shadow:0 0 35px rgba(0,105,255,.12);
+}
+.resume-exact img{
+  display:block;
+  width:100%;
+  height:auto;
+  border-radius:8px;
+  background:#fff;
+}
+</style>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
+<style>
+/* High-contrast, easy-to-see controls */
+.btn, button, .navlinks a, .resume-btn, .cta, a[class*="btn"] {
+  position: relative;
+  z-index: 5;
+}
+.btn {
+  min-height: 48px;
+  padding: 13px 22px;
+  border: 2px solid rgba(42, 148, 255, .95) !important;
+  border-radius: 9px !important;
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 800 !important;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  box-shadow: 0 6px 22px rgba(0, 112, 255, .18);
+}
+.btn.primary, .btn:first-child {
+  background: linear-gradient(135deg,#087cff,#1556d9) !important;
+  color: #fff !important;
+  text-shadow: 0 1px 2px rgba(0,0,0,.35);
+}
+.btn:not(.primary) {
+  background: rgba(4, 14, 29, .95) !important;
+  color: #fff !important;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.12);
+}
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #07111f;
-      color: #f5f7fa;
-      line-height: 1.6;
-    }
+/* Resume: give the actual one-page document maximum readable width */
+.resume-exact {
+  width: min(100%, 1100px) !important;
+  max-width: 1100px !important;
+  margin: 32px auto !important;
+  padding: 14px !important;
+  background: #fff !important;
+  border: 2px solid rgba(30,130,255,.8) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 12px 45px rgba(0,0,0,.45), 0 0 35px rgba(0,120,255,.16) !important;
+  overflow: hidden;
+}
+.resume-exact img {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  border-radius: 5px !important;
+  image-rendering: auto;
+}
 
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: #081321;
-      border-bottom: 1px solid #1e334d;
-      padding: 18px 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+/* On phones, don't make the resume tiny inside a card */
+@media (max-width: 700px) {
+  .btn {
+    min-height: 50px;
+    padding: 13px 17px;
+    font-size: 13px !important;
+  }
+  .resume-exact {
+    margin: 22px -4px !important;
+    padding: 6px !important;
+    border-radius: 8px !important;
+  }
+  .resume-exact img {
+    width: 100% !important;
+  }
+}
+</style>
 
-    nav h2 {
-      color: #38bdf8;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
-      font-size: 14px;
-    }
-
-    nav a:hover {
-      color: #38bdf8;
-    }
-
-    section {
-      padding: 80px 8%;
-    }
-
-    .hero {
-      min-height: 90vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      max-width: 1000px;
-    }
-
-    .hero h1 {
-      font-size: clamp(42px, 8vw, 78px);
-      margin-bottom: 10px;
-    }
-
-    .hero h1 span {
-      color: #38bdf8;
-    }
-
-    .hero h2 {
-      color: #94a3b8;
-      font-size: 26px;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      max-width: 700px;
-      color: #cbd5e1;
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
-
-    .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 12px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      border: 1px solid #38bdf8;
-      color: #07111f;
-      background: #38bdf8;
-    }
-
-    .btn.secondary {
-      background: transparent;
-      color: #38bdf8;
-    }
-
-    .btn:hover {
-      opacity: 0.85;
-    }
-
-    h2.section-title {
-      color: #38bdf8;
-      font-size: 34px;
-      margin-bottom: 30px;
-    }
-
-    .about-text {
-      max-width: 800px;
-      color: #cbd5e1;
-      font-size: 17px;
-    }
-
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    .skill {
-      background: #102238;
-      border: 1px solid #23415f;
-      padding: 10px 16px;
-      border-radius: 20px;
-      color: #dbeafe;
-    }
-
-    .card {
-      background: #0c1a2b;
-      border: 1px solid #203852;
-      border-radius: 14px;
-      padding: 25px;
-      margin-bottom: 20px;
-      max-width: 850px;
-    }
-
-    .card h3 {
-      color: #e0f2fe;
-      margin-bottom: 8px;
-    }
-
-    .card p {
-      color: #b8c7d9;
-    }
-
-    .contact a {
-      color: #38bdf8;
-      text-decoration: none;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      background: #050c15;
-      color: #94a3b8;
-      border-top: 1px solid #1e334d;
-    }
-
-    @media (max-width: 700px) {
-      nav {
-        flex-direction: column;
-        gap: 10px;
-      }
-
-      nav a {
-        margin: 0 6px;
-      }
-
-      section {
-        padding: 60px 6%;
-      }
-    }
-  </style>
+<style>
+html { scroll-behavior: smooth; }
+#resume { scroll-margin-top: 90px; }
+</style>
 </head>
-
 <body>
+<nav><div class="wrap nav">
+<a class="brand" href="#"><span class="brand-mark">M</span><span>MURLI SAI</span></a>
+<div class="navlinks">
+<a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#certificates">Certificates</a><a href="#contact" class="navbtn">Contact ↗</a>
+</div><div class="menu">☰</div>
+</div></nav>
 
-  <nav>
-    <h2>Murli Sai</h2>
+<header class="hero"><div class="wrap hero-grid">
+<div class="hero-copy">
+<div class="eyebrow"><span class="dot"></span> CYBERSECURITY • GRC • RISK & COMPLIANCE</div>
+<h1>Hi, I'm<br><span class="grad">Murli Sai.</span></h1>
+<p>B.Tech graduate building toward a career in <b>Cybersecurity, GRC, Risk & Compliance</b>, with a foundation in IT, data analytics and web development.</p>
+<div class="hero-actions"><a class="btn primary" href="#experience">Explore My Work →</a><a class="btn" href="#resume" target="_blank">View Resume ↓</a></div>
+<div class="socials">
+<a class="social" href="https://www.linkedin.com/in/murli-sai-13a942313" target="_blank" aria-label="LinkedIn">in</a>
+<a class="social" href="https://github.com/nambalamurlisai" target="_blank" aria-label="GitHub">⌘</a>
+<a class="social" href="mailto:nambalamurlisai@gmail.com" aria-label="Email">✉</a>
+</div>
+</div>
+<div class="hero-visual">
+<div class="orb"></div><div class="photo-ring"><img src="profile.jpg" alt="Murli Sai"></div>
+<div class="float f1">📊 Data Driven</div><div class="float f2">💡 Problem Solver</div><div class="float f3">💻 IT & MIS</div><div class="float f4">🚀 Open to Opportunities</div>
+</div>
+</div></header>
 
-    <div>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+<section id="about"><div class="wrap">
+<div class="kicker">01 / About Me</div><h2 class="title">Building toward Cybersecurity GRC.</h2>
+<p class="sub">A focused profile of my current skills and future career direction.</p>
+<div class="about-grid">
+<div class="glass"><h3>My profile</h3><p>B.Tech graduate with practical exposure to <b>web development, data handling, documentation and reporting</b>. My long-term career goal is to work in <b>Cybersecurity GRC, Risk & Compliance</b>.</p>
+<div class="traits"><div class="trait"><b>Analytical</b><span>Data & reporting mindset</span></div><div class="trait"><b>Detail Oriented</b><span>Documentation & process focus</span></div><div class="trait"><b>Growth Mindset</b><span>Learning & improvement</span></div></div></div>
+<div class="glass"><h3>Quick facts</h3><div class="stats"><div class="stat"><div class="n blue">B.Tech</div><div class="l">Computer Science</div></div><div class="stat"><div class="n cyan">GRC</div><div class="l">Career Direction</div></div><div class="stat"><div class="n purple">Risk</div><div class="l">Future Focus</div></div><div class="stat"><div class="n gold">Compliance</div><div class="l">Future Focus</div></div></div></div>
+</div></div></section>
+
+<section id="experience"><div class="wrap">
+<div class="kicker">02 / Experience</div><h2 class="title">Where I gained practical exposure.</h2>
+<p class="sub">Internship experience and the capabilities it helped me develop.</p>
+<div class="timeline">
+<div class="event"><div class="glass"><div class="date">01 JUL 2024 — 30 JUL 2024</div><h3>Frontend Web Development Intern</h3><p><b>Glistara Software Solution</b> — completed a 1-month internship programme with recognition for exemplary performance in Front End Web Development.</p><div class="tags"><span class="tag">Web Development</span><span class="tag">Frontend</span><span class="tag">Documentation</span><span class="tag">Practical Experience</span></div></div></div>
+</div></div></section>
+
+<section><div class="wrap">
+<div class="kicker">03 / Education</div><h2 class="title">Academic foundation.</h2>
+<div class="edu">
+<div class="glass"><div class="year">2023 — 2026</div><h3>Bachelor of Technology (B.Tech)</h3><p>Sandip University — NAAC A Grade | UGC Recognized</p></div>
+<div class="glass"><div class="year">2022 — 2023</div><h3>Bachelor of Technology — First Year Completed</h3><p>Om Sterling Global University, Hisar</p></div>
+</div></div></section>
+
+<section id="skills"><div class="wrap">
+<div class="kicker">04 / Skills</div><h2 class="title">Skills & focus areas.</h2><p class="sub">A clear snapshot of my current foundation and the direction I’m building toward.</p>
+<div class="skills">
+<div class="skill"><div class="skilltop">Cybersecurity GRC <span>CAREER FOCUS</span></div><div class="bar"><i style="width:78%"></i></div></div>
+<div class="skill"><div class="skilltop">Risk & Compliance <span>CAREER FOCUS</span></div><div class="bar"><i style="width:76%"></i></div></div>
+<div class="skill"><div class="skilltop">IT Management <span>FOUNDATION</span></div><div class="bar"><i style="width:82%"></i></div></div>
+<div class="skill"><div class="skilltop">Data Analytics <span>TECHNICAL</span></div><div class="bar"><i style="width:84%"></i></div></div>
+<div class="skill"><div class="skilltop">Excel & Reporting <span>TECHNICAL</span></div><div class="bar"><i style="width:82%"></i></div></div>
+<div class="skill"><div class="skilltop">SQL & Database Concepts <span>TECHNICAL</span></div><div class="bar"><i style="width:78%"></i></div></div>
+<div class="skill"><div class="skilltop">Python <span>TECHNICAL</span></div><div class="bar"><i style="width:74%"></i></div></div>
+<div class="skill"><div class="skilltop">Web Development <span>INTERNSHIP</span></div><div class="bar"><i style="width:76%"></i></div></div>
+</div></div></section>
+
+<section id="certificates"><div class="wrap">
+<div class="kicker">05 / Credentials</div><h2 class="title">Certificates & publication.</h2><p class="sub">Evidence of internship performance and research publication included in this portfolio.</p>
+<div class="certs">
+<div class="glass cert"><img src="certificate-internship.jpg" alt="Glistara internship certificate"><div class="certbody"><h3>Frontend Web Development Internship</h3><p>Glistara Software Solution • 1 Month • 01/07/2024–30/07/2024</p><button class="btn" onclick="openCert('certificate-internship.jpg')">View Certificate ↗</button></div></div>
+<div class="glass cert"><img src="certificate-publication.jpg" alt="IRJET publication certificate"><div class="certbody"><h3>Research Publication</h3><p>IRJET • Volume 12, Issue 12 • December 2025</p><button class="btn" onclick="openCert('certificate-publication.jpg')">View Certificate ↗</button></div></div>
+</div>
+<div class="glass" style="margin-top:18px"><div class="kicker">Published Manuscript</div><h3 style="font-family:'Space Grotesk';font-size:22px;margin:8px 0">“Neuro Well: A Generative AI–Powered Multimodal Emotion Recognition and Mental Health Companion System.”</h3><p style="color:#8f9db4;margin:0">The publication certificate identifies the manuscript as published in IRJET Volume 12, Issue 12, December 2025.</p></div>
+</div></section>
+
+
+<section id="resume">
+  <div class="wrap">
+    <div class="kicker">Resume</div>
+    <h2 class="title">My Resume</h2>
+    <div class="resume-exact">
+      <img src="resume-exact.jpg" alt="Murli Sai Resume">
     </div>
-  </nav>
+  </div>
+</section>
 
-  <section class="hero">
-    <h1>Hi, I'm <span>Murli Sai</span></h1>
 
-    <h2>Cybersecurity Enthusiast | Data Analyst | Web Developer</h2>
+<section id="contact"><div class="wrap">
+<div class="kicker">07 / Contact</div><h2 class="title">Let's build something useful.</h2><p class="sub">For opportunities, collaborations or a professional conversation.</p>
+<div class="contact">
+<div class="glass"><h3>Get in touch</h3><p style="color:#8f9db4">I’m building toward opportunities in Cybersecurity GRC, Risk & Compliance.</p>
+<div class="contact-list">
+<a class="contact-item" href="mailto:nambalamurlisai@gmail.com"><span class="ci">✉</span><span><small>Email</small><b>nambalamurlisai@gmail.com</b></span></a>
+<a class="contact-item" href="tel:+918962153757"><span class="ci">☎</span><span><small>Phone</small><b>+91 8962153757</b></span></a>
+<a class="contact-item" href="https://www.linkedin.com/in/murli-sai-13a942313" target="_blank"><span class="ci">in</span><span><small>LinkedIn</small><b>Murli Sai</b></span></a>
+<a class="contact-item" href="https://github.com/nambalamurlisai" target="_blank"><span class="ci">⌘</span><span><small>GitHub</small><b>nambalamurlisai</b></span></a>
+<div class="contact-item"><span class="ci">⌖</span><span><small>Location</small><b>Bhilai, India</b></span></div>
+</div></div>
+<div class="glass"><form class="form" action="mailto:nambalamurlisai@gmail.com" method="post" enctype="text/plain"><input name="name" placeholder="Your name" required><input name="email" type="email" placeholder="Your email" required><input name="subject" placeholder="Subject"><textarea name="message" placeholder="Your message" required></textarea><button class="btn primary" type="submit">Send Message →</button></form></div>
+</div></div></section>
 
-    <p>
-      B.Tech Computer Science Engineering graduate focused on
-      Cybersecurity, Data Analytics, Web Development, Python, SQL
-      and AI/ML technologies.
-    </p>
+<footer><div class="wrap"><div class="footer-brand">MURLI SAI.</div>© 2026 Murli Sai • Built with curiosity, data & technology.</div></footer>
 
-    <div class="buttons">
-      <a class="btn" href="mailto:nambalamurlisai@gmail.com">
-        Contact Me
-      </a>
-
-      <a class="btn secondary"
-         href="https://www.linkedin.com/in/murli-sai-13a942313"
-         target="_blank">
-        LinkedIn
-      </a>
-
-      <a class="btn secondary"
-         href="https://github.com/nambalamurlisai"
-         target="_blank">
-        GitHub
-      </a>
-    </div>
-  </section>
-
-  <section id="about">
-    <h2 class="section-title">About Me</h2>
-
-    <p class="about-text">
-      I am Murli Sai, a Computer Science Engineering graduate from
-      Sandip University, graduating in 2026. I am interested in
-      Cybersecurity, Cyber Risk, GRC, Data Analytics and Web Development.
-      I enjoy working with technology to solve practical problems and
-      continuously improving my technical skills.
-    </p>
-  </section>
-
-  <section id="skills">
-    <h2 class="section-title">Skills</h2>
-
-    <div class="skills">
-      <span class="skill">Cybersecurity</span>
-      <span class="skill">GRC</span>
-      <span class="skill">Cyber Risk</span>
-      <span class="skill">Python</span>
-      <span class="skill">SQL</span>
-      <span class="skill">Data Analytics</span>
-      <span class="skill">Web Development</span>
-      <span class="skill">HTML</span>
-      <span class="skill">CSS</span>
-      <span class="skill">JavaScript</span>
-      <span class="skill">AI/ML</span>
-      <span class="skill">GitHub</span>
-    </div>
-  </section>
-
-  <section id="experience">
-    <h2 class="section-title">Experience</h2>
-
-    <div class="card">
-      <h3>Seed IT Solutions</h3>
-      <p>
-        Data Analyst & Web Development
-      </p>
-      <p>
-        Worked on data analysis and web development activities,
-        applying analytical and technical skills to practical projects.
-      </p>
-    </div>
-  </section>
-
-  <section id="projects">
-    <h2 class="section-title">Projects</h2>
-
-    <div class="card">
-      <h3>Neuro-Well AI Generative Model</h3>
-
-      <p>
-        An AI-focused project exploring generative AI concepts and
-        technology to support innovative solutions in the mental
-        wellness domain.
-      </p>
-
-      <br>
-
-      <a class="btn secondary"
-         href="https://github.com/nambalamurlisai"
-         target="_blank">
-        View on GitHub
-      </a>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2 class="section-title">Contact</h2>
-
-    <div class="card contact">
-      <p><strong>Name:</strong> Murli Sai</p>
-      <p><strong>Location:</strong> Hyderabad</p>
-      <p><strong>Email:</strong>
-        <a href="mailto:nambalamurlisai@gmail.com">
-          nambalamurlisai@gmail.com
-        </a>
-      </p>
-      <p><strong>Phone:</strong> 8962153757</p>
-
-      <br>
-
-      <p>
-        <a href="https://www.linkedin.com/in/murli-sai-13a942313"
-           target="_blank">
-          LinkedIn Profile
-        </a>
-      </p>
-
-      <p>
-        <a href="https://github.com/nambalamurlisai"
-           target="_blank">
-          GitHub Profile
-        </a>
-      </p>
-    </div>
-  </section>
-
-  <footer>
-    © 2026 Murli Sai | Cybersecurity Portfolio
-  </footer>
-
+<div class="modal" id="modal" onclick="closeCert(event)"><span class="close">×</span><img id="modalImg" src="" alt="Certificate preview"></div>
+<script>
+function openCert(src){document.getElementById('modalImg').src=src;document.getElementById('modal').classList.add('show')}
+function closeCert(e){if(e.target.id==='modal'||e.target.className==='close')document.getElementById('modal').classList.remove('show')}
+</script>
 </body>
 </html>
